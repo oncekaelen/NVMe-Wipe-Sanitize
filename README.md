@@ -53,13 +53,13 @@ Boot the computer from the USB drive. When the Ubuntu installer opens, close it.
 Open a terminal (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>) and download the script to the Desktop:
 
 ```bash
-wget -O /home/ubuntu/Desktop/wipesanitize.sh https://raw.githubusercontent.com/oncekaelen/NVMe-Wipe-Sanitize/main/wipesanitize.sh
+wget -O /home/ubuntu/Desktop/wipesanitize.sh https://raw.githubusercontent.com/oncekaelen/nvme-wipe-sanitize/main/wipesanitize.sh
 ```
 
 If `wget` isn't installed, use `curl` instead:
 
 ```bash
-curl -fL -o /home/ubuntu/Desktop/wipesanitize.sh https://raw.githubusercontent.com/oncekaelen/NVMe-Wipe-Sanitize/main/wipesanitize.sh
+curl -fL -o /home/ubuntu/Desktop/wipesanitize.sh https://raw.githubusercontent.com/oncekaelen/nvme-wipe-sanitize/main/wipesanitize.sh
 ```
 
 <details>
