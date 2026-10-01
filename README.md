@@ -42,7 +42,7 @@ These steps create a persistent Ubuntu live USB drive that runs the script autom
 
 ### 1. Create a bootable USB drive
 
-Download the [Ubuntu Desktop ISO image](https://ubuntu.com/download/desktop) and [Rufus](https://rufus.ie). Use Rufus to create a bootable USB drive from the ISO image, and set **Persistent partition size** to at least 10 GB.
+Download the [Ubuntu Desktop ISO image](https://ubuntu.com/download/desktop) and [Rufus](https://rufus.ie)(If you are on Windows). Use Rufus to create a bootable USB drive from the ISO image, and set **Persistent partition size** to at least 10 GB.
 
 ### 2. Boot from the USB drive
 
