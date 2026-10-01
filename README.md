@@ -42,7 +42,30 @@ These steps create a persistent Ubuntu live USB drive that runs the script autom
 
 ### 1. Create a bootable USB drive
 
-Download the [Ubuntu Desktop ISO image](https://ubuntu.com/download/desktop) and [Rufus](https://rufus.ie) (If you are on Windows). Use Rufus to create a bootable USB drive from the ISO image, and set **Persistent partition size** to at least 10 GB.
+Download the [Ubuntu Desktop ISO image](https://ubuntu.com/download/desktop), then follow the steps for your operating system.
+
+> [!NOTE]
+> The USB drive needs a **persistent partition** so the script and autostart entry survive a reboot. Tools without persistence support, such as balenaEtcher and Ubuntu's Startup Disk Creator, will not work.
+
+#### Windows
+
+Download [Rufus](https://rufus.ie). Use Rufus to create a bootable USB drive from the ISO image, and set **Persistent partition size** to at least 10 GB.
+
+#### Ubuntu and other Linux distributions
+
+Install [mkusb](https://launchpad.net/~mkusb/+archive/ubuntu/ppa):
+
+```bash
+sudo add-apt-repository ppa:mkusb/ppa
+sudo apt update
+sudo apt install mkusb
+```
+
+Run `mkusb`, choose the **persistent live** option, select the ISO image and the USB drive, and give the persistent partition at least 10 GB.
+
+#### macOS
+
+There is no reliable macOS tool that creates a persistent Ubuntu USB drive. Use a Windows or Linux computer for this step. The finished USB drive works on any computer with NVMe drives.
 
 ### 2. Boot from the USB drive
 
